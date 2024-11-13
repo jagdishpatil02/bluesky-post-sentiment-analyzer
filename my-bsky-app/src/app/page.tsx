@@ -14,7 +14,7 @@ export default function Home() {
       "https://api-inference.huggingface.co/models/ProsusAI/finbert",
       {
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_HUGGING_FACE_TOKEN}`,
           "Content-Type": "application/json",
         },
         method: "POST",
